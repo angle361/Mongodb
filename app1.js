@@ -22,7 +22,7 @@ const orange= new Fruit(
     {
     name:"orange",
     rating :6,
-    review: "good"
+    review: "better"
     }
 );
 const banana= new Fruit(
