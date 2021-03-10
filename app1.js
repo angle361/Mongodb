@@ -11,7 +11,7 @@ const fruitSchema = new mongoose.Schema({
 
 const Fruit =mongoose.model("Fruit", fruitSchema);  //it will change Fruit --> Fruits
                                                     //it will follow fruitSchema structure
-const apple= new Fruit(
+const apple= new Fruit(                             //Fruit is an instance of collection named "fruits"
     {
     name:"Apple",
     rating :5,
@@ -28,7 +28,7 @@ const orange= new Fruit(
 const banana= new Fruit(
   {
   name:"banana",
-  rating :6,
+  rating :4,
   review: "good"
   }
 );
@@ -36,7 +36,7 @@ const banana= new Fruit(
 // fruit.save();  //to save fruit document in Fruits collection in fruitsDB db
 // fruit2.save();
 
-Fruit.insertMany({apple,orange,banana}, function(err){
+Fruit.insertMany([apple,orange,banana], function(err){
   if(err){
     console.log(err);
   }
