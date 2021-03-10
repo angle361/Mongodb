@@ -20,14 +20,14 @@ const apple= new Fruit(
 );
 const orange= new Fruit(
     {
-    name:"Apple",
+    name:"orange",
     rating :6,
     review: "good"
     }
 );
 const banana= new Fruit(
   {
-  name:"Apple",
+  name:"banana",
   rating :6,
   review: "good"
   }
